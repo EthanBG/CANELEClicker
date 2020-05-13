@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+#enseigne{
+  color: #5F021F;
+  font-family: 'Pacifico', cursive;
+}
+
+body{
+  font-family: 'Neucha', cursive;
+}
+
+.nbCan{
+  background: none;
+  color: #A47;
+}
