@@ -1,5 +1,5 @@
 var canelés = 0;
-var production = 1000
+var production = 1
 var nbFour = 1
 var nbEmpl = 0
 var nbChef = 0
