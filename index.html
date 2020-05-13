@@ -9,17 +9,21 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
+  <audio src="https://www.youtube.com/watch?v=2gwmTOdga24" loop=true></audio>
   <div class="boutique">
-    <h1 id="enseigne">Canelé Clicker</h1>
-    <section>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Caneles_stemilion.jpg/1200px-Caneles_stemilion.jpg" alt="">
-    </section>
-    <section>
-      <p>Vous avez <mark class="nbCan">0</mark> canelés.</p>
-      <button type="button" name="button">Cuisiner</button>
-      <button type="button" name="button" disabled="true">Acheter un four (25 canelés)</button>
+    <header>
+      <h1 id="enseigne" class="center"><u>Canelé Clicker</u></h1>
+    </header>
+    <div class="center image">
+    </div>
+    <section class="center clicker">
+      <p>Vous avez <span id="nbCan">0</span> canelés.</p>
+      <button type="button" name="button" id="cuisiner" onclick="Cuisine()">Cuisiner</button>
+      <button type="button" name="button" disabled="true" id="NouvFour" onclick="NouveauFour()">Acheter un four (25 canelés)</button>
+      <button type="button" name="button" disabled="false" style="display:none" id="AutoCanelé" onclick="NouveauEmpl()">Embaucher un employer (100 canelés)</button>
     </section>
   </div>
 </body>
