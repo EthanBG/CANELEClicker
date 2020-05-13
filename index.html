@@ -12,19 +12,20 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <audio src="https://www.youtube.com/watch?v=2gwmTOdga24" loop=true></audio>
-  <div class="boutique">
-    <header>
-      <h1 id="enseigne" class="center"><u>Canelé Clicker</u></h1>
-    </header>
-    <div class="center image">
-    </div>
-    <section class="center clicker">
-      <p>Vous avez <span id="nbCan">0</span> canelés.</p>
-      <button type="button" name="button" id="cuisiner" onclick="Cuisine()">Cuisiner</button>
-      <button type="button" name="button" disabled="true" id="NouvFour" onclick="NouveauFour()">Acheter un four (25 canelés)</button>
-      <button type="button" name="button" disabled="false" style="display:none" id="AutoCanelé" onclick="NouveauEmpl()">Embaucher un employer (100 canelés)</button>
-    </section>
+  <iframe class="embed-responsive-item"id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/2gwmTOdga24?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=2gwmTOdga24"
+  frameborder="0" allowfullscreen></iframe>
+  <header>
+    <h1 id="enseigne" class="center"><u>Canelé Clicker</u></h1>
+  </header>
+  <div class="center image">
   </div>
+  <section class="center clicker">
+    <p>Vous avez <span id="nbCan">0</span> canelés.</p>
+    <button type="button" name="button" id="cuisiner" onclick="Cuisine()">Cuisiner</button>
+    <button type="button" name="button" disabled="true" id="NouvFour" onclick="NouveauFour()">Acheter un four (25 canelés)</button>
+    <button type="button" name="button" disabled="false" style="display:none" id="AutoCanelé" onclick="NouveauEmpl()">Embaucher un employer (100 canelés)</button>
+    <button type="button" name="button" disabled="false" style="display:none" id="Chef" onclick="NouveauChef()">Embaucher un chef d'équipe (150 canelés)</button>
+  </section>
+</div>
 </body>
 </html>

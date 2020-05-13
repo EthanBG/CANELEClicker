@@ -49,3 +49,7 @@ img{
 p{
   font-size: 25px;
 }
+
+iframe{
+  display: none;
+}
