@@ -12,8 +12,12 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <iframe class="embed-responsive-item"id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/2gwmTOdga24?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=2gwmTOdga24"
-  frameborder="0" allowfullscreen></iframe>
+  <div class="">
+  <audio src="sound/furnace.mp3" id="furnace" autoplay="false" loop="false" volume=""></audio>
+  <audio src="sound/music.mp3" id="music" autoplay="true" loop="true" volume=""></audio>
+  <audio src="sound/can.mp3" id="can" autoplay="false" loop="false" volume=""></audio>
+  <audio src="sound/emp.mp3" id="emp" autoplay="false" loop="false" volume=""></audio>
+  <audio src="sound/chef.mp3" id="chefSound" autoplay="false" loop="false" volume=""></audio>
   <header>
     <h1 id="enseigne" class="center"><u>Canelé Clicker</u></h1>
   </header>
@@ -21,11 +25,13 @@
   </div>
   <section class="center clicker">
     <p>Vous avez <span id="nbCan">0</span> canelés.</p>
-    <button type="button" name="button" id="cuisiner" onclick="Cuisine()">Cuisiner</button>
-    <button type="button" name="button" disabled="true" id="NouvFour" onclick="NouveauFour()">Acheter un four (25 canelés)</button>
-    <button type="button" name="button" disabled="false" style="display:none" id="AutoCanelé" onclick="NouveauEmpl()">Embaucher un employer (100 canelés)</button>
-    <button type="button" name="button" disabled="false" style="display:none" id="Chef" onclick="NouveauChef()">Embaucher un chef d'équipe (150 canelés)</button>
+    <button type="button" name="button" id="cuisiner" onclick="Cuisine(); canSound()">Cuisiner</button>
+    <button type="button" name="button" disabled="true" id="NouvFour" onclick="NouveauFour(); four()">Acheter un four (25 canelés)</button>
+    <button type="button" name="button" disabled="false" style="display:none" id="AutoCanelé" onclick="NouveauEmpl(); empSound()">Embaucher un employer (100 canelés)</button>
+    <button type="button" name="button" disabled="false" style="display:none" id="Chef" onclick="NouveauChef(); chefSound()">Embaucher un chef d'équipe (150 canelés)</button>
   </section>
 </div>
+
+<script src="js/sound.js"></script>
 </body>
 </html>
